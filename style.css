@@ -1,0 +1,151 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    min-height: 100vh;
+}
+
+/* Navigation */
+#navbar {
+    margin-right: 2rem;
+}
+
+.nav-link.p-3.text-center {
+    color: black;
+    border-radius: 2rem;
+}
+
+.nav-link.p-3.text-center:hover {
+    background-color: rgb(5, 35, 100);
+    color: white;
+}
+
+.navbar-toggler {
+    margin-right: 1.2rem;
+}
+
+/* Login & Registration */
+.wrapper {
+    max-width: 350px;
+    min-height: 500px;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    margin-bottom: 465px;
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background-color: #03A9F4;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1;
+    letter-spacing: 1.3px;
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5;
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4;
+}
+
+.wrapper a:hover {
+    color: #039BE5;
+    text-decoration: underline;
+}
+
+/* Menu */
+.row h1{
+    padding-top: 3rem;
+    font-weight: 500;
+}
+
+.row h4 {
+    font-size: 1.2em;
+}
+
+.container-fluid.menu > .row {
+    padding-bottom: 4rem;
+}
+
+.col-xxl-2 {
+    padding-bottom: 5rem;
+}
+
+.container-bestellen {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-bestellen, .btn-speichern {
+    background-color: rgb(5, 35, 100);
+    font-size: 1.2em;
+    border-radius: 2rem;
+    padding: 20px 100px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.btn-speichern:hover {
+    transition: linear 0.1s ;
+    transform: scale(1.1)
+}
+
+.btn-bestellen:hover {
+    transition: linear 0.1s ;
+    transform: scale(1.1)
+}
+
+/* Impressum */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper-Impressum {
+    max-width: 1080px;
+    min-height: 500px;
+    margin: 180px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: rgb(5, 35, 100);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+    margin-bottom: 465px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+
+.Impressum-text {
+    text-align: center;
+}

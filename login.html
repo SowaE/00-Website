@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <title>Login</title>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <div id="navigation"></div>
+    <script
+      src="JavaScript/HTML_Importe/Navigation.js"
+      type="text/javascript"
+    ></script>
+    <!-- Navigation End -->
+    <!-- Main -->
+    <div class="wrapper">
+      <div class="text-center mt-4 name">Login</div>
+      <form
+        class="p-3 mt-3"
+        action="PHP/LoginAusDatenbank.php"
+        method="POST"
+      >
+        <div class="form-floating mb-3 mt-3">
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+            name="email"
+          />
+          <label for="email">E-Mail</label>
+        </div>
+        <div class="form-floating mt-3 mb-3">
+          <input
+            type="password"
+            class="form-control"
+            id="pwd"
+            placeholder="Enter password"
+            name="pswd"
+          />
+          <label for="pwd">Passwort</label>
+        </div>
+        <button class="btn mt-3">Login</button>
+      </form>
+      <div class="text-center fs-6">
+        Noch kein Konto? <a href="Registration.php">Registrieren</a>
+      </div>
+    </div>
+    <!-- Main End -->
+  </body>
+</html>

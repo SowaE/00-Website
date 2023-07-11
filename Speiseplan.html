@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Speisekarte</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <script src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    .lead {
+      font-size: 30px;
+      margin-bottom: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div id="navigation"></div>
+  <script src="JavaScript/HTML_Importe/Navigation.js" type="text/javascript"></script>
+  <!-- Navigation End -->
+  <!-- Table-->
+  <div class="container-fluid menu">
+    <div class="row">
+      <h1 class="text-center">Speiseplan</h1>
+      <h4 class="text-center">
+        Kalenderwoche
+        <span id="KW"></span>
+      </h4>
+      <div class="col-md-1"></div>
+      <div class="col-xxl-2">
+        <div class="card">
+          <div class="card-header" style="background-color: rgb(5, 35, 100); color: white">
+            <h4 class="text-center">Montag</h4>
+          </div>
+          <div class="panel-body text-center">
+            <p class="lead">
+              <div id="mondayDate">Datum</div>
+            </p>
+          </div>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Menü 1</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Schnitzel
+                <input type="radio" id="MoHaupt1" name="Menü 1" value="Men1" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Menü 2</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Selerie stangen
+                <input type="radio" id="MoHaupt2" name="Menü 2" value="Men2" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>gemischter Salat mit</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Putenstreifen
+                <input type="radio" id="MoHaupt3" name="Putenstreifen" value="Men3" />
+              </div>
+              <div>
+                anderes
+                <input type="radio" id="MoHaupt4" name="anderes" value="Men4" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Beilage</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Kleiner Salat
+                <input type="checkbox" id="Beilage1" name="Beilage1" value="Beilage1" />
+              </div>
+              <div>
+                Pommes
+                <input type="checkbox" id="Beilage2" name="Beilage2" value="Beilage2" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xxl-2">
+        <div class="card">
+          <div class="card-header" style="background-color: rgb(5, 35, 100); color: white">
+            <h4 class="text-center">Dienstag</h4>
+          </div>
+          <div class="panel-body text-center">
+            <p class="lead">
+              <div id="tuesdayDate">Datum</div>
+            </p>
+          </div>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Menü 1</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Schnitzel
+                <input type="radio" id="DiHaupt1" name="Menü 1" value="Men1" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Menü 2</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Selerie stangen
+                <input type="radio" id="DiHaupt2" name="Menü 2" value="Men2" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>gemischter Salat mit</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Putenstreifen
+                <input type="radio" id="DiHaupt3" name="Putenstreifen" value="Men3" />
+              </div>
+              <div>
+                anderes
+                <input type="radio" id="DiHaupt4" name="anderes" value="Men4" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Beilage</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Kleiner Salat
+                <input type="checkbox" id="Beilage1" name="Beilage1" value="Beilage1" />
+              </div>
+              <div>
+                Pommes
+                <input type="checkbox" id="Beilage2" name="Beilage2" value="Beilage2" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xxl-2">
+        <div class="card">
+          <div class="card-header" style="background-color: rgb(5, 35, 100); color: white">
+            <h4 class="text-center">Mittwoch</h4>
+          </div>
+          <div class="panel-body text-center">
+            <p class="lead">
+              <div id="wednesdayDate">Datum</div>
+            </p>
+          </div>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Menü 1</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Schnitzel
+                <input type="radio" id="MiHaupt1" name="Menü 1" value="Men1" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Menü 2</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Selerie stangen
+                <input type="radio" id="MiHaupt2" name="Menü 2" value="Men2" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>gemischter Salat mit</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Putenstreifen
+                <input type="radio" id="MiHaupt3" name="Putenstreifen" value="Men3" />
+              </div>
+              <div>
+                anderes
+                <input type="radio" id="MiHaupt4" name="anderes" value="Men4" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Beilage</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Kleiner Salat
+                <input type="checkbox" id="Beilage1" name="Beilage1" value="Beilage1" />
+              </div>
+              <div>
+                Pommes
+                <input type="checkbox" id="Beilage2" name="Beilage2" value="Beilage2" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xxl-2">
+        <div class="card">
+          <div class="card-header" style="background-color: rgb(5, 35, 100); color: white">
+            <h4 class="text-center">Donnerstag</h4>
+          </div>
+          <div class="panel-body text-center">
+            <p class="lead">
+              <div id="thursdayDate">Datum</div>
+            </p>
+          </div>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Menü 1</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Schnitzel
+                <input type="radio" id="DoHaupt1" name="Menü 1" value="Men1" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Menü 2</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Selerie stangen
+                <input type="radio" id="DoHaupt2" name="Menü 2" value="Men2" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>gemischter Salat mit</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Putenstreifen
+                <input type="radio" id="DoHaupt3" name="Putenstreifen" value="Men3" />
+              </div>
+              <div>
+                anderes
+                <input type="radio" id="DoHaupt4" name="anderes" value="Men4" />
+              </div>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Beilage</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Kleiner Salat
+                <input type="checkbox" id="Beilage1" name="Beilage1" value="Beilage1" />
+              </div>
+              <div>
+                Pommes
+                <input type="checkbox" id="Beilage2" name="Beilage2" value="Beilage2" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xxl-2">
+        <div class="card">
+          <div class="card-header" style="background-color: rgb(5, 35, 100); color: white">
+            <h4 class="text-center">Freitag</h4>
+          </div>
+          <div class="panel-body text-center">
+            <p class="lead">
+              <div id="fridayDate">Datum</div>
+            </p>
+          </div>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i><strong>Pausenverkauf</strong>
+            </li>
+            <li class="list-group-item">
+              <i class="icon-ok text-danger"></i>
+              <div>
+                Crispy Chicken
+                <input type="checkbox" id="FreitagPause" name="FreitagPause" value="FreitagPause" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <div class="container-bestellen">
+    <button class="btn-bestellen" type="submit">Bestellen</button>
+  </div>
+  </div>
+  <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
