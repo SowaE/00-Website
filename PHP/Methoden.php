@@ -17,7 +17,7 @@
 
     function CheckEmail($email, $connection) {
         $sql = "SELECT Email FROM benutzer WHERE Email = '" . $email . "'";
-        $ergebnis = mysqli_query($connection, $sql)->num_rows;
+        $ergebnis = mysqli_query($connection, $sql)->num_row;
         if($ergebnis == 0)
             return false;
         else
@@ -32,8 +32,8 @@
 
     function NeuenBenutzerAnlegen($mail, $vName, $nName, $passwort, $klasse, $conn) {
         $maxBenutzerID = GetMaxUserID($conn) + 1;
-        $sql = "INSERT INTO benutzer (Benutzer_ID, Benutzer_Art, Klasse_ID, Vorname, Nachname, Email, Password) ";
-        $passwortHash = crypt($passwort, "87cd084d190e436f147322b90e7384f6a8e0676c99d21ef519ea718e51d45f9c");
+        $sql = "INSERT INTO benutzer (Benutzer_ID, Klasse_ID, Vorname, Nachname, Email, Password) ";
+        $passwortHash = password_hash($passwort, PASSWORD_DEFAULT);
         if($klasse == " ") {
             $klasse = "null";
         }

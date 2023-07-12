@@ -12,6 +12,11 @@
             while($row = $table->fetch_assoc()) {
                 if($row["Email"] == $mail) {
                     if(password_verify($passwort, $row["Password"]) || $passwort == $row["Password"]) {
+                        if($row["Email"] == "Admin") {
+                            setcookie('admin', 'admin');
+                        } else if($row["Email"] == "Katerer") {
+                            setcookie('katerer', 'katerer');
+                        }
                         echo "<script> 
                                 alert('Erfolgreich angemeldet');
                                 window.location.href = '../Speiseplan.html';

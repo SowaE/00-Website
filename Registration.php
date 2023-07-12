@@ -11,13 +11,34 @@
   </head>
 
   <body>
-    <!-- Navigation -->
-    <div id="navigation"></div>
-    <script
-      src="JavaScript/HTML_Importe/Navigation.js"
-      type="text/javascript"
-    ></script>
-    <!-- Navigation End -->
+  <!-- Navigation -->
+  <script>
+    function getCookie(name) {
+      var cookieString = document.cookie;
+      var cookies = cookieString.split("; ");
+  
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].split("=");
+        var cookieName = cookie[0];
+        var cookieValue = cookie[1];
+    
+        if (cookieName === name) {
+          return cookieValue;
+        }
+      }
+      return null;
+    }
+    var username = getCookie("admin");
+    if(username = null) {
+      document.getElementById("navigation").innerHTML = "<script src='JavaScript/HTML_Importe/Navigation.js' type='text/javascript'></script>";
+    } else if(username = "admin") {
+      document.getElementById("navigation").innerHTML = "<script src='JavaScript/HTML_Importe/NavigationMitAdmin.js' type='text/javascript'></script>";
+    } else if((username = "katerer")) {
+      document.getElementById("navigation").innerHTML = "<script src='JavaScript/HTML_Importe/NavigationMitCat.js' type='text/javascript'></script>";
+    }
+  </script>
+  <div id="navigation"></div>
+  <!-- Navigation End -->
     <!-- Main -->
     <div class="wrapper">
       <div class="text-center mt-4 name">Registration</div>
