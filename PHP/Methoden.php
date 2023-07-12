@@ -24,12 +24,6 @@
             return true;
     }
 
-    function GetUserPassword($conn ,$username){
-        $sql = "SELECT password FROM benutzer WHERE benutzername = ".$username;
-        $password = password_hash(mysqli_query());
-        return $password;
-    }
-
     function GetMaxUserID($conn) {
         $sql = "SELECT MAX(Benutzer_ID) FROM benutzer";
         $ergebnis = mysqli_query($conn, $sql)->fetch_row()[0];
